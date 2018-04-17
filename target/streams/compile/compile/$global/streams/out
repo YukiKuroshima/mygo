@@ -1,0 +1,205 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/JediException.scala:3:19: object parsing is not a member of package util[0m
+[0m[[0m[31merror[0m] [0m[0mimport scala.util.parsing.combinator._[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:3:19: object parsing is not a member of package util[0m
+[0m[[0m[31merror[0m] [0m[0mimport scala.util.parsing.combinator._[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:16:28: not found: type RegexParsers[0m
+[0m[[0m[31merror[0m] [0m[0mclass Jedi1Parsers extends RegexParsers {[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:18:19: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def expression: Parser[Expression] = declaration | conditional | disjunction | failure("Invalid expression")[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:20:20: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def declaration: Parser[Declaration] = "def" ~ identifier ~ "=" ~ expression ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:111:19: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def identifier: Parser[Identifier] = """[a-zA-Z][a-zA-Z0-9]*""".r ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:20:48: value ~ is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m  def declaration: Parser[Declaration] = "def" ~ identifier ~ "=" ~ expression ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:21:35: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "def" ~ identifier ~ "=" ~ expression => Declaration(identifier, expression)[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:21:29: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "def" ~ identifier ~ "=" ~ expression => Declaration(identifier, expression)[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:21:16: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "def" ~ identifier ~ "=" ~ expression => Declaration(identifier, expression)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:25:20: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def conditional: Parser[Conditional] = "if" ~ "(" ~ expression ~ ")" ~ expression ~ opt("else" ~ expression) ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:25:47: value ~ is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m  def conditional: Parser[Conditional] = "if" ~ "(" ~ expression ~ ")" ~ expression ~ opt("else" ~ expression) ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:25:87: not found: value opt[0m
+[0m[[0m[31merror[0m] [0m[0m  def conditional: Parser[Conditional] = "if" ~ "(" ~ expression ~ ")" ~ expression ~ opt("else" ~ expression) ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:25:98: value ~ is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m  def conditional: Parser[Conditional] = "if" ~ "(" ~ expression ~ ")" ~ expression ~ opt("else" ~ expression) ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:26:41: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "if" ~ "(" ~ cond ~ ")" ~ cons ~ None               => Conditional(cond, cons)[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:26:34: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "if" ~ "(" ~ cond ~ ")" ~ cons ~ None               => Conditional(cond, cons)[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:26:28: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "if" ~ "(" ~ cond ~ ")" ~ cons ~ None               => Conditional(cond, cons)[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:26:21: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "if" ~ "(" ~ cond ~ ")" ~ cons ~ None               => Conditional(cond, cons)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:26:15: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "if" ~ "(" ~ cond ~ ")" ~ cons ~ None               => Conditional(cond, cons)[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:27:41: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "if" ~ "(" ~ cond ~ ")" ~ cons ~ Some("else" ~ alt) => Conditional(cond, cons, alt)[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:27:34: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "if" ~ "(" ~ cond ~ ")" ~ cons ~ Some("else" ~ alt) => Conditional(cond, cons, alt)[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:27:28: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "if" ~ "(" ~ cond ~ ")" ~ cons ~ Some("else" ~ alt) => Conditional(cond, cons, alt)[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:27:21: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "if" ~ "(" ~ cond ~ ")" ~ cons ~ Some("else" ~ alt) => Conditional(cond, cons, alt)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:27:15: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "if" ~ "(" ~ cond ~ ")" ~ cons ~ Some("else" ~ alt) => Conditional(cond, cons, alt)[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:27:55: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "if" ~ "(" ~ cond ~ ")" ~ cons ~ Some("else" ~ alt) => Conditional(cond, cons, alt)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:31:20: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def disjunction: Parser[Expression] = conjunction ~ rep("||" ~> conjunction) ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:37:20: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def conjunction: Parser[Expression] = equality ~ rep("&&" ~> equality) ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:43:17: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def equality: Parser[Expression] = inequality ~ rep("==" ~> inequality) ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:49:19: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def inequality: Parser[Expression] = sum ~ opt(("<" | ">" | "!=") ~ sum) ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:64:12: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def sum: Parser[Expression] = product ~ rep(("+" | "-") ~ product ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:73:16: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def product: Parser[Expression] = term ~ rep(("*" | "/") ~ term) ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:86:13: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def term: Parser[Expression] = funCall | literal | "(" ~> expression <~ ")"[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:78:55: not found: type ~[0m
+[0m[[0m[31merror[0m] [0m[0m  private def parseProduct(t: Expression, terms: List[~[String, Expression]]): Expression = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:81:12: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m      case ~("*", t1) :: more => parseProduct(FunCall(Identifier("mul"), List(t, t1)), more)[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:82:12: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m      case ~("/", t1) :: more => parseProduct(FunCall(Identifier("div"), List(t, t1)), more)[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:118:16: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def funCall: Parser[FunCall] = identifier ~ operands ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:106:14: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def boole: Parser[Boole] = """true|false""".r ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:91:14: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def chars: Parser[Chars] = """\"[^"]+\"""".r ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:91:48: value ^^ is not a member of scala.util.matching.Regex[0m
+[0m[[0m[31merror[0m] [0m[0m  def chars: Parser[Chars] = """\"[^"]+\"""".r ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:96:16: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def integer: Parser[Integer] = """0|(\+|-)?[1-9][0-9]*""".r ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:96:63: value ^^ is not a member of scala.util.matching.Regex[0m
+[0m[[0m[31merror[0m] [0m[0m  def integer: Parser[Integer] = """0|(\+|-)?[1-9][0-9]*""".r ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:101:13: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def real: Parser[Real] = """(\+|-)?[0-9]+\.[0-9]+""".r ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:101:58: value ^^ is not a member of scala.util.matching.Regex[0m
+[0m[[0m[31merror[0m] [0m[0m  def real: Parser[Real] = """(\+|-)?[0-9]+\.[0-9]+""".r ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:106:49: value ^^ is not a member of scala.util.matching.Regex[0m
+[0m[[0m[31merror[0m] [0m[0m  def boole: Parser[Boole] = """true|false""".r ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:111:69: value ^^ is not a member of scala.util.matching.Regex[0m
+[0m[[0m[31merror[0m] [0m[0m  def identifier: Parser[Identifier] = """[a-zA-Z][a-zA-Z0-9]*""".r ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:123:17: not found: type Parser[0m
+[0m[[0m[31merror[0m] [0m[0m  def operands: Parser[List[Expression]] = "(" ~ opt(expression ~ rep("," ~> expression)) ~ ")" ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:123:48: value ~ is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m  def operands: Parser[List[Expression]] = "(" ~ opt(expression ~ rep("," ~> expression)) ~ ")" ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:123:50: not found: value opt[0m
+[0m[[0m[31merror[0m] [0m[0m  def operands: Parser[List[Expression]] = "(" ~ opt(expression ~ rep("," ~> expression)) ~ ")" ^^ {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:125:32: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "(" ~ Some(exp ~ Nil) ~ ")" => List(exp)[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:125:14: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "(" ~ Some(exp ~ Nil) ~ ")" => List(exp)[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:125:25: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "(" ~ Some(exp ~ Nil) ~ ")" => List(exp)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:126:33: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "(" ~ Some(exp ~ more) ~ ")" => exp :: more[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:126:14: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "(" ~ Some(exp ~ more) ~ ")" => exp :: more[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/Jedi1Parsers.scala:126:25: not found: value ~[0m
+[0m[[0m[31merror[0m] [0m[0m    case "(" ~ Some(exp ~ more) ~ ")" => exp :: more[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/JediException.scala:9:35: not found: type Parsers[0m
+[0m[[0m[31merror[0m] [0m[0mclass SyntaxException(val result: Parsers#Failure = null) extends JediException("Syntax error")[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/console.scala:17:26: value parseAll is not a member of context.Jedi1Parsers[0m
+[0m[[0m[31merror[0m] [0m[0m      val tree = parsers.parseAll(parsers.expression, cmmd)[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./context/console.scala:19:29: type Failure is not a member of context.Jedi1Parsers[0m
+[0m[[0m[31merror[0m] [0m[0m         case tree: parsers.Failure => throw new SyntaxException(tree)[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./test/Temp.scala:2:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./test/Temp.scala:4:27: not found: type FlatSpec[0m
+[0m[[0m[31merror[0m] [0m[0mclass ExampleSpec extends FlatSpec with Matchers {[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./test/Temp.scala:4:41: not found: type Matchers[0m
+[0m[[0m[31merror[0m] [0m[0mclass ExampleSpec extends FlatSpec with Matchers {[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./test/Temp.scala:6:13: value should is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m  "A Stack" should "pop values in last-in-first-out order" in {[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./test/Temp.scala:10:17: value should is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m    stack.pop() should be (2)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./test/Temp.scala:10:24: not found: value be[0m
+[0m[[0m[31merror[0m] [0m[0m    stack.pop() should be (2)[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./test/Temp.scala:11:17: value should is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m    stack.pop() should be (1)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./test/Temp.scala:11:24: not found: value be[0m
+[0m[[0m[31merror[0m] [0m[0m    stack.pop() should be (1)[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./test/Temp.scala:14:3: not found: value it[0m
+[0m[[0m[31merror[0m] [0m[0m  it should "throw NoSuchElementException if an empty stack is popped" in {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./test/Temp.scala:16:5: not found: value a[0m
+[0m[[0m[31merror[0m] [0m[0m    a [NoSuchElementException] should be thrownBy {[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yk/Code/scala/workspace/Jedi3/src/./test/Temp.scala:16:39: not found: value be[0m
+[0m[[0m[31merror[0m] [0m[0m    a [NoSuchElementException] should be thrownBy {[0m
+[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m68 errors found[0m

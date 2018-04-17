@@ -126,6 +126,18 @@ object alu {
     }
   }
 
+  // more than 2 args ok
+  def equals(args: List[Value]): Value = {
+    if (args.length == 1) throw new TypeException("equals expects at least two inputs")
+    // Boole(args.foldLeft(_ == _))
+    def helper(current: Value, rest: List[Value]):Value = {
+      if (current != rest.head) Boole(false)
+      else if (rest.size == 1) Boole(true)
+      else helper(rest.head, rest.tail)
+    }
+    helper(args.head, args)
+  }
+  /*
   def equals(args: List[Value]): Value = {
     if (args.length != 2) throw new TypeException("equals expects two inputs")
 
@@ -138,6 +150,8 @@ object alu {
       else Boole(args(0) == args(1))
     }
   }
+  *
+  */
 
   def unequals(args: List[Value]): Value = not(List(equals(args)))
 
