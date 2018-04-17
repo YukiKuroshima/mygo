@@ -3,8 +3,10 @@ package expression
 import context._
 import value._
 
-class Block(val expressions: List[Expression]) extends SpecialForm {
+case class Block(val expressions: List[Expression]) extends SpecialForm {
   def execute(env: Environment): Value = {
-    expressions.map(_.execute(env)).last
+    val tempEnv = new Environment(env)
+    // expressions.map(_.execute(env))
+    expressions.map(_.execute(tempEnv)).last
   }
 }

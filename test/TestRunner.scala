@@ -3,7 +3,7 @@ package test
 import value._
 
 object TestRunner {
-  def run(value: Value, expected: String) {
+  def run[T](value: T, expected: String) {
     if (value.toString == expected) {
       println("PASS")
     } else {
