@@ -19,25 +19,6 @@ class Environment(var extension: Environment = null)
     else if (extension != null) extension.contains(name)
     else false
   }
-  * 
-  */
-
-  /*
-  override def apply(name: Identifier): Value = {
-    println("IN Env apply " + name + " size: " + this.size)
-    this foreach (x => println (x._1 + "-->" + x._2))
-
-    if (this.contains(name)) {
-      println("Env apply calling super")
-      super.apply(name) 
-    }
-    else if (extension != null) {
-      println("extension is not null")
-      extension.apply(name)
-    }
-    else throw new UndefinedException(name)
-  }
-  * 
   */
   override def apply(name: Identifier): Value = {
     if (this.contains(name)) super.apply(name)
